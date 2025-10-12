@@ -135,7 +135,7 @@ class TestAccountService(TestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         data = response.get_json()
         self.assertEqual(data["name"], new_account.name)
-    
+
 
     def test_read_account_not_found(self):
         """it should return that the account is not found"""
